@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Josefin+Sans&family=Julius+Sans+One&family=Prompt&display=swap');
+
+:root {
+    --main-color: #174ea6;
+    --yellow: #121205;
+    --golden: #FFCD60;
+    --crimson: #FF8162;
+    --light: #70a5de;
+    --black: black;
+    --white: #fff;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+    --padding: .3em .5em;
+    --radius: 10px;
+
+    --promt: 'Prompt', sans-serif;
+    --archivo: 'Archivo Narrow', sans-serif;
+    --julius: 'Julius Sans One', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;
+}
+
+.nxt-btn{
+    width: 15%;
+    padding: var(--padding);
+    font-size: 1.2em;
+    background-color: var(--light);
+    border: 0;
+    border-radius: 20px;
+    font-family: var(--julius);
+}
+
+* {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    background-color: #70a5de;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+}
+nav .right{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .right .a, nav .right button{
+    padding: .6em 1.2em;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+}
+
+nav .right .a{
+    color: white;
+    font-weight: bold;
+    font-family: var(--julius);
+}
+
+nav .right button{
+    border: 2px solid var(--crimson);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.auth-back {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.auth-back .cred {
+    background-color: var(--white);
+    padding: 3em 1em;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.auth-back form {
+    height: 100%;
+    padding: 2em;
+    width: 80%;
+}
+
+.auth-back form input {
+    border-radius: 5px;
+    padding: .3em .6em;
+    outline: none;
+    border: 1px solid;
+}
+
+.auth-back form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+    font-family: var(--josefin);
+
+}
+
+.auth-back form button {
+    width: 100%;
+    padding: .6em;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.change-form {
+    display: flex;
+    flex-direction: row;
+    margin: 2% 10%;
+}
+
+.change-form a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.reg {
+    font-size: 12px;
+}
+
+.payment {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.payment-inside {
+    font-size: .9em;
+    background-color: var(--white);
+    width: 60%;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    border-radius: 10px;
+}
+.pay{
+    width: 40%;
+    padding: .8em .2em;
+    background-color: var(--main-color);
+    color: white;
+    border: 0;
+}
+
+.payment .payment-inside .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    font-weight: 200;
+}
+
+.payment .payment-inside .left .card-info {
+    width: 80%;
+    border: 1px solid ;
+}
+
+.payment-inside input {
+    padding: var(--padding);
+    outline: none;
+    border: none;
+
+}
+
+.payment .payment-inside .left .date {
+    width: 35%;
+    border: none;
+
+}
+.payment .payment-inside .left .num {
+    width: 40%;
+    border: none;
+
+}
+
+.payment .payment-inside .left .cvv {
+    width: 20%;
+    border: none;
+}
+
+.payment .right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: rgb(224, 223, 223);
+    width: 60%;
+    padding: 2em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.payment .right div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2% 0;
+    border-bottom: 1px solid;
+    padding: 0em .3em;
+}
+
+.auth-back .sp{
+    background-color: white;
+    padding: 1em;
+    width: 35%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.auth-back .sp .head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.active{
+    font-size: .7em;
+    background-color: var(--light);
+    color: var(--main-color);
+    font-weight: bold;
+    padding:.2em;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.cancel{
+    background-color: transparent;
+    border: none;
+    color: var(--light);
+    font-weight: bold;
+}
+
+.cancelled{
+    font-size: .7em;
+    background-color: rgb(203, 200, 200);
+    color: rgb(245, 81, 81);
+    font-weight: bold;
+    padding:.2em;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.auth-back .sp .about .rs{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.canc-btn{
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: var(--padding);
+    color: var(--light);
+    background-color: transparent;
+}
+
+.sp .desc{
+    font-size: .8em;
+    text-align: center;
+    background-color: rgb(209, 207, 207);
+    border-radius: 5px;
+    padding: var(--padding);
+}
+
+.pricing{
+    background-color: var(--white);
+    padding: var(--padding);
+}
+
+.pricing{
+    border-radius: 10px;
+    width: 80%;
+}
+
+table{
+    width: 100%;
+    padding: var(--padding) ;
+    color: #94979a;
+}
+table th{
+    text-align: center;
+    height: 110px;
+    border: 2px solid;
+    background-color: var(--main-color);
+    color: white;
+}
+table th button{
+   background-color: transparent;
+   border: 0;
+   color: white;
+}
+
+.Mobile{
+    color: var(--main-color);
+    font-weight: 800;
+    transition: all .6s ease-in-out 0s;
+}
+.Basic{
+    color: var(--main-color);
+    font-weight: 800;
+    transition: all .6s ease-in-out 0s;
+}
+.Standard{
+    color: var(--main-color);
+    font-weight: 800;
+    transition: all .6s ease-in-out 0s;
+}
+.Premium{
+    color: var(--main-color);
+    font-weight: 800;
+    transition: all .6s ease-in-out 0s;
+}
+.switch{
+    border: 0;
+    background-color: transparent;
+    color :black
+}
+td{
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+tr td td{
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+}
+
+table tbody tr{
+    border-bottom: 5px solid rgb(165, 162, 162);
+}
+
+table p{
+font-size: .8em;
+}
+.twigs{
+    text-align: left;
+}
+
+/* Switch */
+.tabs {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    position: relative;
+    background-color: var(--main-color);
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    padding: 0.75rem;
+    border-radius: 99px;
+    color: white;
+  }
+  
+  .tabs * {
+    z-index: 2;
+  }
+  
+  .container input[type="radio"] {
+    display: none;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    font-size: .8rem;
+    color: black;
+    font-weight: 500;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+  }
+  
+ 
+  
+  .container input[type="radio"]:checked + label {
+    color: #185ee0;
+  }
+  
+  .container input[type="radio"]:checked + label > .notification {
+    background-color: #185ee0;
+    color: #fff;
+    margin: 0px;
+  }
+  
+  .container input[id="radio-1"]:checked ~ .glider {
+    transform: translateX(-50%);
+  }
+  
+  .container input[id="radio-2"]:checked ~ .glider {
+    transform: translateX(45%);
+  }
+  
+  
+  
+  .glider {
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    height: 30px;
+    width: 80px;
+    background-color: #e6eef9;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+  }
+  
+  @media (max-width: 700px) {
+   
+    .tabs {
+      transform: scale(0.6);
+    }
+  }
+  
